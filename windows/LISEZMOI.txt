@@ -1,0 +1,23 @@
+YouTube en MP3 - version Windows
+================================
+
+1. Clic droit sur le fichier .zip > "Extraire tout..." (ne pas lancer depuis l'interieur du zip).
+2. Dans le dossier extrait, double-clic sur "YouTube en MP3.bat".
+   Si Windows affiche "Windows a protege votre ordinateur" : clic sur "Informations
+   complementaires" puis "Executer quand meme".
+3. Premiere fois : il installe Python, yt-dlp et ffmpeg (quelques minutes).
+   Ensuite ferme la fenetre et relance "YouTube en MP3.bat".
+   Un raccourci "YouTube en MP3" apparait sur le Bureau.
+4. L'interface s'ouvre dans le navigateur. Colle un lien YouTube, Spotify ou SoundCloud.
+   Les MP3 vont dans Telechargements\MP3.
+   Pour quitter : fermer la fenetre noire.
+
+Liens acceptes
+- YouTube (video ou playlist) : telecharge directement.
+- Spotify (playlist publique, album, titre) : chaque titre est cherche sur YouTube.
+  Seuls les 100 premiers titres d'une playlist sont lus.
+- SoundCloud (set, page d'artiste, titre) : chaque titre est cherche sur YouTube.
+
+Probleme (erreur 403, titres introuvables) : ouvrir "Invite de commandes" et taper
+    winget upgrade yt-dlp.yt-dlp
+puis relancer.
